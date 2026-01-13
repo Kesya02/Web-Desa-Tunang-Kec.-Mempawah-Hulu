@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Resmi Desa Tunang</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #f4f6f9;
+        color: #333;
+        line-height: 1.7;
+      }
+      header {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("foto/foto 1.jpg");
+
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        padding: 130px 20px;
+        text-align: center;
+      }
+      header h1 {
+        font-size: 3.5rem;
+        margin-bottom: 10px;
+      }
+      header p {
+        font-size: 1.3rem;
+      }
+      nav {
+        background: #fff;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        list-style: none;
+        padding: 18px;
+        flex-wrap: wrap;
+      }
+      nav a {
+        text-decoration: none;
+        font-weight: 600;
+        color: #1e8e6e;
+      }
+      nav a:hover {
+        color: #145f4a;
+      }
+      section {
+        max-width: 1200px;
+        margin: auto;
+        padding: 80px 20px;
+      }
+      .section-title {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      .section-title h2 {
+        font-size: 2.5rem;
+        color: #1e8e6e;
+      }
+      .card {
+        background: #fff;
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+      }
+      .stat {
+        text-align: center;
+      }
+      .stat h3 {
+        font-size: 2.2rem;
+        color: #1e8e6e;
+      }
+      .gallery img {
+        width: 100%;
+        border-radius: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
+      footer {
+        background: #1e8e6e;
+        color: #fff;
+        padding: 60px 20px;
+        text-align: center;
+      }
+      #lightbox {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.85);
+        justify-content: center;
+        align-items: center;
+        z-index: 2000;
+      }
+      #lightbox img {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Selamat Datang di Web Desa Tunang</h1>
+      <p>Kecamatan Mempawah Hulu · Kabupaten Landak · Kalimantan Barat</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#visi">Visi & Misi</a></li>
+        <li><a href="#pemerintahan">Pemerintahan</a></li>
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#berita">Berita</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#peta">Peta</a></li>
+      </ul>
+    </nav>
+
+    <section id="profil">
+      <div class="section-title"><h2>Profil Desa</h2></div>
+      <div class="card">
+        <p>
+          Desa Tunang adalah salah satu desa di Kecamatan Mempawah Hulu,
+          Kabupaten Landak, Provinsi Kalimantan Barat dengan kode pos
+          <strong>79363</strong>. Desa ini memiliki lingkungan asri, masyarakat
+          ramah, dan budaya gotong royong yang kuat.
+        </p>
+      </div>
+    </section>
+
+    <section id="visi">
+      <div class="section-title"><h2>Visi & Misi</h2></div>
+      <div class="grid">
+        <div class="card">
+          <h3>Visi</h3>
+          <p>
+            Terwujudnya Desa Tunang yang maju, mandiri, sejahtera, dan
+            berkelanjutan.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Misi</h3>
+          <ul>
+            <li>Peningkatan pelayanan publik</li>
+            <li>Pengembangan potensi desa</li>
+            <li>Partisipasi masyarakat</li>
+            <li>Pelestarian budaya dan lingkungan</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="pemerintahan">
+      <div class="section-title"><h2>Pemerintahan Desa</h2></div>
+      <div class="grid">
+        <div class="card stat">
+          <h3>Kepala Desa</h3>
+          <p>(Nama Kades)</p>
+        </div>
+        <div class="card stat">
+          <h3>Sekretaris Desa</h3>
+          <p>(Nama Sekdes)</p>
+        </div>
+        <div class="card stat">
+          <h3>BPD</h3>
+          <p>Desa Tunang</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="layanan">
+      <div class="section-title"><h2>Layanan Desa</h2></div>
+      <div class="grid">
+        <div class="card">Surat Keterangan Domisili</div>
+        <div class="card">Surat Keterangan Usaha</div>
+        <div class="card">Surat Pengantar</div>
+      </div>
+    </section>
+
+    <section id="berita">
+      <div class="section-title"><h2>Berita Desa</h2></div>
+      <div class="grid">
+        <div class="card">
+          <h4>Gotong Royong Warga</h4>
+          <p>Kegiatan gotong royong rutin warga Desa Tunang.</p>
+        </div>
+        <div class="card">
+          <h4>Pembangunan Desa</h4>
+          <p>Program pembangunan infrastruktur desa.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeri">
+      <div class="section-title"><h2>Galeri Foto</h2></div>
+      <div class="grid gallery">
+        <img src="img/foto 1.jpg" onclick="openLightbox(this.src)" />
+        <figcaption>Keindahan alam Desa Tunang dilihat dari udara</figcaption>
+        <img src="img/foto 2.jpeg" onclick="openLightbox(this.src)" />
+        <figcaption>
+          Bupati Landak Percepat Operasional RS Pratama di Desa Tunang
+        </figcaption>
+        <img src="img/foto 3.jpeg" onclick="openLightbox(this.src)" />
+        <figcaption>
+          Peletakan Batu Pertama Pembangunan RS Pratama di Desa Tunang Oleh
+          Bupati Landak
+        </figcaption>
+        <img src="img/foto 4.jpeg" onclick="openLightbox(this.src)" />
+        <figcaption></figcaption>
+        <img src="img/foto 5.jpg" onclick="openLightbox(this.src)" />
+        <figcaption>Penyaluran BLT-DD Tahap Pertama di Desa Tunang</figcaption>
+        <img src="img/foto 6.jpg" onclick="openLightbox(this.src)" />
+        <figcaption>Pariwisata Air Terjun Desa Tunang</figcaption>
+      </div>
+    </section>
+
+    <section id="peta">
+      <div class="section-title"><h2>Lokasi Desa</h2></div>
+      <div class="card">
+        <iframe
+          src="https://maps.google.com/maps?q=Desa%20Tunang&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="350"
+          style="border-radius: 16px; border: 0"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Website Resmi Desa Tunang | Desa Digital Nasional</p>
+    </footer>
+
+    <div id="lightbox" onclick="this.style.display='none'">
+      <img id="lightbox-img" />
+    </div>
+    <script>
+      function openLightbox(src) {
+        document.getElementById("lightbox").style.display = "flex";
+        document.getElementById("lightbox-img").src = src;
+      }
+    </script>
+  </body>
+</html>
